@@ -6,7 +6,7 @@ namespace StressTestSimulation.Cases
     public class BottleneckCase
     {
         // Optimize this code below
-        public async Task<long> Run()
+        public async Task<long> RunAsync()
         {
             var stopwatch = new Stopwatch();
             DataService dataService = new DataService();
