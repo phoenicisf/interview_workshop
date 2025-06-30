@@ -10,7 +10,7 @@ namespace StressTestSimulation.Cases
         {
             var stopwatch = new Stopwatch();
             DataService dataService = new DataService();
-            // Create 100 Orders
+            // Create 200 Orders
             stopwatch.Start();
             for (int i = 0; i < 200; i++)
             {
