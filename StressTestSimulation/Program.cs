@@ -4,14 +4,14 @@ Console.WriteLine("Application started");
 
 // # ข้อ 1.
 BottleneckCase bottleneckCase = new BottleneckCase();
-var milliseconds = bottleneckCase.Run().GetAwaiter().GetResult();
+var milliseconds = bottleneckCase.RunAsync().GetAwaiter().GetResult();
 Console.WriteLine($"1. BottleneckCase Run time: {milliseconds} Milliseconds.");
 Console.WriteLine();
 Console.WriteLine();
 
 // # ข้อ 2.
 QueryAndManipulation queryAndManipulation = new QueryAndManipulation();
-var result = queryAndManipulation.Run().GetAwaiter().GetResult();
+var result = queryAndManipulation.RunAsync().GetAwaiter().GetResult();
 Console.WriteLine("2. QueryAndManipulation: The top 10 highest-value orders from the past 30 days.");
 for (int i = 0; i < result.top10OrderHighestValue.Count; i++)
 {

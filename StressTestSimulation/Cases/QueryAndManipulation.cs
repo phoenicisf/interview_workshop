@@ -10,7 +10,7 @@ namespace StressTestSimulation.Cases
         {
             sampleDataProducts = new Product().SampleProducts(2000);
         }
-        public async Task<(List<(int orderId, decimal totalAmount)> top10OrderHighestValue, List<(int productId, int totalCount)> top10PopularProductIds)> Run()
+        public async Task<(List<(int orderId, decimal totalAmount)> top10OrderHighestValue, List<(int productId, int totalCount)> top10PopularProductIds)> RunAsync()
         {
             var sw = new Stopwatch();
             List<(int orderId, decimal totalAmount)> top10OrderHighestValue = new List<(int orderId, decimal totalAmount)>();
